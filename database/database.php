@@ -14,10 +14,10 @@ $sql = " CREATE TABLE IF NOT EXISTS `users`(
 
 $sql .= " CREATE TABLE IF NOT EXISTS `post`(
     `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    `post_title` VARCHAR(255) NOT NULL UNIQUE,
+    `post_title` VARCHAR(255) NOT NULL,
     `post_text` TEXT NOT NULL,
     `created_at` DATETIME,
-    `id_user` INT UNSIGNED NOT NULL UNIQUE,   
+    `id_user` INT UNSIGNED NOT NULL,   
     PRIMARY KEY(`id`),
     FOREIGN KEY(`id_user`) REFERENCES `users`(`id`)
         ON UPDATE CASCADE ON DELETE CASCADE
