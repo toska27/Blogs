@@ -1,0 +1,71 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background: rgb(222, 225, 228);
+  background: radial-gradient(
+    circle,
+    rgb(235, 235, 235) 21%,
+    rgb(213, 217, 215) 59%
+  );
+}
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}
+.bg-container {
+  background-color: rgb(237, 237, 237);
+}
+
+/*header*/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgb(183, 180, 180);
+  font-size: large;
+}
+.nav-border {
+  border-right: 1px solid rgb(204, 199, 199);
+}
+
+/* index*/
+.msg {
+  text-align: center;
+}
+.index-btn {
+  margin: 10px;
+}
+.login-register {
+  background-color: rgb(222, 222, 222);
+}
+
+/* login */
+.login {
+  margin-top: 20px;
+}
+
+/*register*/
+.register {
+  margin-top: 20px;
+}
+
+/* reset password*/
+.reset-pass {
+  margin-top: 20px;
+}
+
+/*add_post*/
+.post-text {
+  margin-top: 10px;
+}
+.add {
+  margin-top: 10px;
+}
+
+/*my_profile*/
+.title_my_profile {
+  margin-bottom: 30px;
+}

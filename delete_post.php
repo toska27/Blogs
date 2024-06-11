@@ -14,14 +14,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $deleteQuery = "DELETE FROM post WHERE id = $post_id AND id_user = $id";
         
         if($conn->query($deleteQuery)) {
-            header("Location: profile.php");
+            header("Location: my_profile.php");
         } else {
-            echo "Error deleting post: " . $conn->error;
+            header("Location: error.php?" . http_build_query(['m' => "Error deleting post"])); 
         }
     } else {
-        echo "Post ID not provided";
+        header("Location: error.php?" . http_build_query(['m' => "Post ID not provided"])); 
     }
 } else {
-    echo "Invalid request method";
+    header("Location: error.php?" . http_build_query(['m' => "Invalid request method"]));
 }
 ?>

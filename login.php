@@ -15,7 +15,6 @@
         $username = $conn->real_escape_string($_POST["username"]);
         $password = $conn->real_escape_string($_POST["password"]);
 
-        // Validacije
         if(empty($username)){
             $usernameError = "Username cannot be blank!";      
         }
@@ -57,15 +56,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-  
+<header>
+    <?php require_once "header.php"; ?>
+</header>
 <section class="back-login">
-    <div class="container">
+    <div class="container login">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card mb-3">
-                    <div class="card-body">
+                    <div class="card-body bg-container">
                         <form action="#" method="post" class="form-login">
                             <h1 class="card-title text-center">Please login</h1>
                             <div class="mb-3">
@@ -79,7 +81,7 @@
                                 <span class="error"><?php echo $passwordError; ?></span>
                             </div>
                             <div class="d-grid">
-                                <input type="submit" value="Login" class="btn btn-primary">
+                                <input type="submit" value="Login" class="btn btn-dark">
                             </div>
                         </form>
                     </div>

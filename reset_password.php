@@ -62,17 +62,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reset password</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
 <header>
     <?php require_once "header.php"; ?>
 </header>
 <section class="back-reset">
-    <div class="container">
+    <div class="container reset-pass">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body bg-container">
                         <h1 class="card-title text-center">Please reset the current password</h1>
                         <form action="#" method="post" class="reset"> 
                             <div class="mb-3">
@@ -91,7 +92,7 @@
                                 <span class="error"><?php echo $retypeNewPassError ?></span>
                             </div>
                             <div class="d-grid">
-                                <input type="submit" class="btn btn-primary" value="Edit password">
+                                <input type="submit" class="btn btn-dark" value="Edit password">
                             </div>
                         </form>
                     </div>
