@@ -4,7 +4,7 @@
     require_once "validation.php";
 
     $message = "";
-    if (isset($_GET["p"]) && $_GET["p"] == "ok"){                          
+    if (isset($_GET["m"]) && $_GET["m"] == "ok"){                          
         $message = "You have successfully registred, please login to continue";     
     }
 

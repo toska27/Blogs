@@ -45,7 +45,7 @@
             ('$username', '$hash', '$first_name', '$last_name', '$dob');";                                    
 
             if($conn->query($q)){             
-                header("Location: index.php?p=ok");   
+                header("Location: index.php?m=ok");   
             } else{
                 header("Location: error.php?" . http_build_query(['m' => "Error creating user"])); 
             }
